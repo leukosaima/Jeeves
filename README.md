@@ -8,3 +8,5 @@ Usage:
 * Get the full image by surrounding it in double curly brackets (ex: {{Stimhack}})
 
 This project is licensed under the terms of the MIT license.
+
+Docker: set environment variable "DISCORD_BOT_TOKEN" to your bot token.
