@@ -1,0 +1,16 @@
+trigger:
+- v1.0.x
+
+pool: Default
+
+steps:
+- task: Docker@2
+  inputs:
+    containerRegistry: 'docker hub'
+    repository: 'jintekicorp/anrbot'
+    command: 'buildAndPush'
+    addPipelineData: false
+    Dockerfile: '**/Dockerfile'
+    tags: |
+      $(Build.BuildId)
+      latest
